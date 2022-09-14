@@ -1,0 +1,24 @@
+PODS:
+  - GoogleMaps/Base (4.2.0)
+  - GooglePlaces (4.2.0):
+    - GoogleMaps/Base (= 4.2.0)
+  - Kingfisher (7.2.2)
+
+DEPENDENCIES:
+  - GooglePlaces (= 4.2.0)
+  - Kingfisher (~> 7.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleMaps
+    - GooglePlaces
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  GoogleMaps: eb03e327edfd70b06de1e6e321653f73712df7ad
+  GooglePlaces: 196a9dd88580dcb3f3df46f415057703d0d2a310
+  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+
+PODFILE CHECKSUM: 7ddd645450a0438b9df9e0e5a7cd24c51bdc7855
+
+COCOAPODS: 1.7.3

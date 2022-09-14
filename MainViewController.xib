@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="NatifeTestProj" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="V7d-TZ-0Ni" id="DZU-QC-ssf"/>
+                <outlet property="mainView" destination="Os7-cj-Bih" id="EEK-I1-wTK"/>
+                <outlet property="mainWeatherView" destination="Os7-cj-Bih" id="gT2-wP-NYN"/>
+                <outlet property="tableView" destination="Qqi-Jt-y6h" id="59F-68-mxW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qqi-Jt-y6h">
+                    <rect key="frame" x="0.0" y="434" width="414" height="428"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="V7d-TZ-0Ni">
+                    <rect key="frame" x="0.0" y="284" width="414" height="150"/>
+                    <color key="backgroundColor" red="0.35672605039999999" green="0.62357538940000001" blue="0.94105941059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="uLM-e0-3We"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Lh-Vd-15W">
+                        <size key="itemSize" width="150" height="150"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-cj-Bih" customClass="MainWeatherView" customModule="NatifeTestProj" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="240"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="LYq-vN-bmx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Os7-cj-Bih" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="24M-ae-WuH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Qqi-Jt-y6h" secondAttribute="bottom" id="4fm-v5-HSN"/>
+                <constraint firstItem="V7d-TZ-0Ni" firstAttribute="top" secondItem="Os7-cj-Bih" secondAttribute="bottom" id="6gw-Lm-Jh8"/>
+                <constraint firstItem="Qqi-Jt-y6h" firstAttribute="top" secondItem="V7d-TZ-0Ni" secondAttribute="bottom" id="83B-OE-59P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qqi-Jt-y6h" secondAttribute="trailing" id="Nl9-yr-JYT"/>
+                <constraint firstItem="V7d-TZ-0Ni" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ovn-v4-uUL"/>
+                <constraint firstItem="V7d-TZ-0Ni" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ToI-L7-6YW"/>
+                <constraint firstItem="Os7-cj-Bih" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fIr-F9-zrQ"/>
+                <constraint firstItem="Os7-cj-Bih" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hso-Fm-WPf"/>
+                <constraint firstItem="Qqi-Jt-y6h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="quA-Z6-iru"/>
+            </constraints>
+            <point key="canvasLocation" x="-233.33333333333334" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>
